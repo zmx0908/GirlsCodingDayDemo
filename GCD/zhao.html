@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>天气</title>
+    <style>
+        /* 清除浮动 */
+        .clearfix::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        html,body{
+            width:100%;
+            height:100%;
+        }
+        .weather-box{
+            width:1094px;
+            margin: 0 auto;
+        }
+        .main-title{
+            text-align: center;
+            font-size:28px;
+            color :blue
+        }
+        .discription{
+            text-align: center;
+            font-size:24px;
+            color :rgb(186, 197, 29)
+        }
+        .item{
+        padding: 0;
+        }
+        .list{
+            list-style: none;
+            width: 20%;
+      float: left;
+      border: 1px solid rgb(80, 165, 11);
+      overflow: hidden;
+      margin-right: 15px;
+      border-radius: 50px;
+      height: 200px;
+      transition: 0.3s
+        }
+        .list:hover {
+            cursor: pointer;
+            transform: translateY(-10px);
+        }
+
+
+
+
+        .element {
+      width: 1094px;
+      height: 63%;
+    }
+    .element img{
+        width: 220px;
+        height: 100px;
+        background-color: rgb(8, 129, 34)
+    }
+    .weather-box2{
+        padding: 8px
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="weather-box">
+        <h1 class="main-title">天气情况</h1>
+        <p class="discription"> 4个城市的天气情况</p>
+        <ul class="item">
+            <li class="list" >
+
+                <div class="element">
+                    <img src="icons/天气(1).svg" alt="">
+                </div>
+                <div class="weather-box2"> 
+                    <h2 class="nanjing">微风 </h2>
+                    <p class="name"></p>
+                </div>
+
+            </li>
+            <li class="list" >
+
+                <div class="element">
+                    <img src="icons/天气(2).svg" alt="">
+                </div>
+                <div class="weather-box2"> 
+                    <h2 class="nanjing">晴天</h2>
+                    <p class="name"></p>
+                </div>
+
+            </li>
+            <li class="list" >
+
+                <div class="element">
+                    <img src="icons/天气(3).svg" alt="">
+                </div>
+                <div class="weather-box2"> 
+                    <h2 class="nanjing">多雨</h2>
+                    <p class="name"></p>
+                </div>
+
+            </li>
+            <li class="list" >
+
+                <div class="element">
+                    <img src="icons/天气(4).svg" alt="">
+                </div>
+                <div class="weather-box2"> 
+                    <h2 class="nanjing">多云</h2>
+                    <p class="name"></p>
+                </div>
+
+            </li>
+
+        </ul>
+
+    </div>
+    
+</body>
+</html>
